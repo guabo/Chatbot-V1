@@ -9,7 +9,10 @@ This is a general-purpose ChatBot about retail clothing and accessories. ChatBot
 ## How to compile and run
 Firstly download the repository. Then run the "Main.py" file.
 
-## Assignment 3 Code Features
+#New API
+the Goggle translate API allows users to type in other languages and the bought to understand and respond in english
+
+## Code Features
 ###Brand-new GUI to interact with. (1 point)
 - The new GUI allows the user to interact with the bot with a more user-friendly medium.
 
