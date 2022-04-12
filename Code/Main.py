@@ -8,9 +8,11 @@ from subject import find_subject as fs
 from response import generate_response as gs
 from typing import Optional
 
+
+
 """
 This is the core class for the ChatBot. This is a general purpose ChatBot about retail clothing and accessories. The 
-ChatBot is able to discuss reviews, compliant, and product satisfaction.
+ChatBot is able to discuss reviews, complaints, and product satisfaction.
 """
 
 
@@ -238,7 +240,6 @@ class ChatApplication:
 
         msg: str = self.message_entry.get()
         self.message_entry.delete(0, END)
-
         if msg:
 
             for command, method in self.COMMANDS.items():
@@ -256,6 +257,10 @@ class ChatApplication:
                 subject: str = fs(msg)
                 response: str = gs(category, subject)
                 self.log("Customer Service: {response}\n\n".format(response=response))
+
+             
+
+           
 
     def log(self, msg: str) -> None:
         """
